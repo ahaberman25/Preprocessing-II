@@ -1,6 +1,7 @@
 // Mixins in here
-.flex-it-up(@justify, @align) {
+.flex-it-up(@justify, @direction, @align) {
     display: flex;
+    flex-direction: @direction;
     justify-content: @justify;
     align-items: @align;
 }
@@ -14,12 +15,12 @@
     }
 }
 
-.sign-up-btns {
+.sign-up-btns(@width) {
     background-color: #008080;
     padding: 5%;
     color: white;
     font-size: 2em;
     border-radius: 15px;
     text-align: center;
-    width: 83%;
+    width: @width;
 }
