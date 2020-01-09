@@ -1,1 +1,25 @@
 // Mixins in here
+.flex-it-up(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.sexylinks(@color, @scolor) {
+    text-decoration: none;
+    color: @color;
+
+    &:hover {
+        color: @scolor;
+    }
+}
+
+.sign-up-btns {
+    background-color: #008080;
+    padding: 5%;
+    color: white;
+    font-size: 2em;
+    border-radius: 15px;
+    text-align: center;
+    width: 83%;
+}
